@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="240" height="180" style="--light:#ece6ff;--mid:#8b76d4">
+  <defs>
+    <linearGradient id="shell" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#fff"/><stop offset=".28" stop-color="var(--light, #ece6ff)"/><stop offset="1" stop-color="var(--mid, #9b7bff)"/>
+    </linearGradient>
+    <linearGradient id="edge" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="var(--mid, #9b7bff)"/><stop offset="1" stop-color="#2b1024"/>
+    </linearGradient>
+    <linearGradient id="screen" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#2b1024"/><stop offset=".55" stop-color="var(--mid, #9b7bff)"/><stop offset="1" stop-color="var(--light, #ece6ff)"/>
+    </linearGradient>
+    <radialGradient id="shadow">
+      <stop stop-color="#2b1024" stop-opacity=".28"/><stop offset="1" stop-color="#2b1024" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="120" cy="153" rx="77" ry="19" fill="url(#shadow)"/>
+  <g transform="rotate(-12 120 91)">
+    <path d="M70 54h100v74c0 15-22 27-50 27s-50-12-50-27z" fill="url(#edge)" stroke="#fff" stroke-opacity=".52"/>
+    <path d="M79 69v55c0 12 16 18 34 20" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="2"/>
+    <ellipse cx="120" cy="54" rx="50" ry="22" fill="url(#shell)" stroke="#fff" stroke-opacity=".78"/>
+    <ellipse cx="120" cy="54" rx="36" ry="14" fill="none" stroke="#45173a" stroke-opacity=".6"/>
+    <path d="M113 54h14m-7-4v8m-24 25h48m-48 9h48m-48 9h48m-48 9h48m-48 9h48" stroke="#fff" stroke-opacity=".48" stroke-linecap="round" stroke-dasharray="2 4"/>
+  </g>
+</svg>

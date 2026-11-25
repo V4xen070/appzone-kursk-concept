@@ -1,0 +1,85 @@
+/* Дизайн-токены appzone Курск. Ведёт Claude; в styles.css использовать только эти переменные. */
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/onest-cyrillic-wght-normal.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/onest-latin-wght-normal.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+20BD, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/unbounded-cyrillic-wght-normal.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/unbounded-latin-wght-normal.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+20BD, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Цвета */
+  --bg: #f6f4f8;
+  --surface: #ffffff;
+  --line: #e9e3ef;
+  --ink: #17121c;
+  --muted: #6a6274;
+  --plum: #2b1024;
+  --plum-2: #45173a;
+  --on-plum: #f7eef4;
+  --on-plum-muted: #c9b5c3;
+  --accent: #d61f69;
+  --accent-hover: #b8155a;
+  --pink-soft: #ffe0ee;
+  --lilac: #9b7bff;
+  --lilac-soft: #ece6ff;
+  --ok: #138a43;
+  --grad: linear-gradient(135deg, #ff6fae 0%, #b28bff 100%);
+  --grad-soft: linear-gradient(135deg, #ffe3f0 0%, #ece6ff 100%);
+
+  /* Шрифты */
+  --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --font-body: "Onest", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-hero: clamp(2rem, 1.2rem + 3.6vw, 4rem);
+  --fs-h2: clamp(1.6rem, 1.1rem + 2vw, 2.75rem);
+  --fs-h3: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
+  --fs-body: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --fs-small: 0.875rem;
+  --tracking-display: -0.02em;
+
+  /* Размеры */
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 32px);
+  --section-y: clamp(64px, 8vw, 120px);
+  --radius-card: 24px;
+  --radius-sm: 14px;
+  --radius-pill: 999px;
+
+  /* Тени */
+  --shadow-sm: 0 2px 8px rgba(43, 16, 36, 0.06);
+  --shadow-md: 0 12px 32px -8px rgba(80, 40, 120, 0.18);
+  --shadow-lg: 0 30px 60px -20px rgba(80, 40, 120, 0.35);
+
+  /* Движение */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur: 400ms;
+  --dur-slow: 800ms;
+  --stagger: 70ms;
+}

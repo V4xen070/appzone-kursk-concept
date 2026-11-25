@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="240" height="180">
+  <defs>
+    <linearGradient id="shell" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#fff"/><stop offset=".28" stop-color="var(--light, #ece6ff)"/><stop offset="1" stop-color="var(--mid, #9b7bff)"/>
+    </linearGradient>
+    <linearGradient id="edge" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="var(--mid, #9b7bff)"/><stop offset="1" stop-color="#2b1024"/>
+    </linearGradient>
+    <linearGradient id="screen" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#2b1024"/><stop offset=".55" stop-color="var(--mid, #9b7bff)"/><stop offset="1" stop-color="var(--light, #ece6ff)"/>
+    </linearGradient>
+    <radialGradient id="shadow">
+      <stop stop-color="#2b1024" stop-opacity=".28"/><stop offset="1" stop-color="#2b1024" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="120" cy="149" rx="89" ry="17" fill="url(#shadow)"/>
+  <g transform="rotate(-16 120 90)">
+    <path d="M64 77c0 30 15 50 55 50 23 0 41-11 41-27 0-15-18-23-41-23-29 0-48 14-48 31 0 16 19 29 51 29 35 0 59-19 59-45V68" fill="none" stroke="url(#edge)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M64 76c0 30 15 49 55 49 23 0 41-11 41-27 0-15-18-23-41-23-29 0-48 14-48 31 0 16 19 29 51 29 35 0 59-19 59-45V67" fill="none" stroke="url(#shell)" stroke-width="6" stroke-linecap="round"/>
+    <g fill="url(#shell)" stroke="#fff" stroke-opacity=".75"><rect x="52" y="52" width="24" height="27" rx="7"/><rect x="168" y="42" width="26" height="28" rx="7"/></g>
+    <path d="M58 52V42q0-3 3-3h6q3 0 3 3v10m105-10V31q0-3 3-3h6q3 0 3 3v11" fill="url(#edge)"/>
+  </g>
+</svg>
